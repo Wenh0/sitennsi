@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <meta charset="utf-8">
+    <link rel="icon" href="img/logo2.png">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <title>Informations</title>
+  </head>
+  <body>
+
+      <div class=menu>
+        <nav>
+          <ul>
+            <li><a href="index.html"><button class="menu" type="button" name="button">Accueil</button></a></li>
+            <li><a href="infos.html"><button class="menu" type="button" name="button">Infos</button></a></li>
+            <li><a href="about.html"><button class="menu" type="button" name="button">A propos</button></a></li>
+
+          </ul>
+        </nav>
+      </div>
+
+      <div class="header">
+        <img class="head" src="img/study.jpg" alt="image couldn't load(), check the image url to fix the issue." width="100%">
+        <br>
+      </div>
+
+      <div class="content">
+        <h1 class="subcontent">La Formation</h1>
+        <p class="subcontent">Pour exercer le métier de vendeur en informatique, les compétences requises peuvent varier.</p>
+        <p class="subcontent">Si vous voulez travailler en tant que salarié dans une entreprise, quelle que soit la taille, il vous faudra le bac et un CAP ou un BEP.</p>
+        <h2 class="subcontent">Les Diplômes</h2>
+        <div class="click">
+          <ul>
+
+            <li>
+              <div class="opt">
+              <a href="#"><button type="button" name="button"><img src="img/autoent.jpg" alt="error,check file path" width="400px"><h2>Pour être auto-entrepreneur</h2></button></a>
+              <div class="deroul">
+                <ul class="deroul3">
+                  <li class="option1"><p>cc</p></li>
+                </ul>
+              </div>
+            </div>
+            </li>
+
+            <li>
+              <div class="opt">
+              <a href="#"><button type="button" name="button"><img src="img/autoent.jpg" alt="error,check file path" width="400px"><h2>Pour être salarié</h2></button></a>
+              <div class="deroul">
+                <ul class="deroul3">
+                  <li class="option2"><p>cc</p></li>
+                </ul>
+              </div>
+            </div>
+            </li>
+
+            <li>
+              <div class="opt">
+              <a href="#"><button type="button" name="button"><img src="img/autoent.jpg" alt="error,check file path" width="400px"><h2>Pour être chef d'entreprise</h2></button></a>
+              <div class="deroul">
+                <ul class="deroul3">
+                  <li class="option3"><p>cc</p></li>
+                </ul>
+              </div>
+            </div>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+      <br>
+
+      <footer>
+        <p class=footer> All rights reserved | Copyright 2022 Xen,inc. &copy, <a class=mail href="mailto:zenowatelle@outlook.com">Nous contacter</a></p>
+      </footer>
+  </body>
+  <script>
+
+      $('.click li').mouseenter(function(){
+        $(this).children('deroul').css('diplay','block')
+      })
+      $('.click  li').mouseleave(function(){
+        $(this).children('deroul').css('diplay','none')
+      })
+  </script>
+</html>
