@@ -1,24 +1,23 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
     <meta charset="utf-8">
-    <link rel="icon" href="img/logo2.png">
+    <link rel="icon" href="icons/nice.png">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <title>Informations</title>
   </head>
   <body>
 
-      <div class=menu>
-        <nav>
-          <ul>
-            <li><a href="index.html"><button class="menu" type="button" name="button">Accueil</button></a></li>
-            <li><a href="infos.html"><button class="menu" type="button" name="button">Infos</button></a></li>
-            <li><a href="about.html"><button class="menu" type="button" name="button">A propos</button></a></li>
-
-          </ul>
-        </nav>
-      </div>
+    <div class=menu>
+      <nav>
+        <ul>
+          <li><a href="index.html" class="menu">Accueil</a></li>
+          <li><a href="infos.html" class="menu">Infos</a></li>
+          <li><a href="about.html" class="menu">A propos</a></li>
+        </ul>
+      </nav>
+    </div>
 
       <div class="header">
         <img class="head" src="img/study.jpg" alt="image couldn't load(), check the image url to fix the issue." width="100%">
@@ -34,54 +33,26 @@
           <ul>
 
             <li>
-              <div class="opt">
-              <a href="#"><button type="button" name="button"><img src="img/autoent.jpg" alt="error,check file path" width="400px"><h2>Pour être auto-entrepreneur</h2></button></a>
-              <div class="deroul">
-                <ul class="deroul3">
-                  <li class="option1"><p>cc</p></li>
-                </ul>
-              </div>
-            </div>
+              <button type="button" name="button"><img src="img/autoent.jpg" alt="error,check file path" width="400px"><h2>Pour être auto-entrepreneur</h2></button>
+              <p>La formation minimum requise pour ouvrir son propre commerce <br>  en tant qu'auto-entrepreneur<br>est le baccalauréat, et Un CAP (certificat d'aptitude professionnelle) <br>ou un BEP (Brevet d'études professionnelles) <br><br></p>
             </li>
-
             <li>
-              <div class="opt">
-              <a href="#"><button type="button" name="button"><img src="img/autoent.jpg" alt="error,check file path" width="400px"><h2>Pour être salarié</h2></button></a>
-              <div class="deroul">
-                <ul class="deroul3">
-                  <li class="option2"><p>cc</p></li>
-                </ul>
-              </div>
-            </div>
+              <button type="button" name="button"><img src="img/vendeurs.jpg" alt="error,check file path" width="400px"><h2>Pour être salarié</h2></button>
+              <p>Pour être un salarié en entreprise, il faut dorénavant<br>un CAP ou BEP, mais de nombreuses entreprises<br>commencent à demander un BAC+2, au minimum.<br><br><br></p>
             </li>
-
             <li>
-              <div class="opt">
-              <a href="#"><button type="button" name="button"><img src="img/autoent.jpg" alt="error,check file path" width="400px"><h2>Pour être chef d'entreprise</h2></button></a>
-              <div class="deroul">
-                <ul class="deroul3">
-                  <li class="option3"><p>cc</p></li>
-                </ul>
-              </div>
-            </div>
+              <button type="button" name="button"><img src="img/pdg.jpg" alt="error,check file path" width="400px"><h2>Pour être chef d'entreprise</h2></button>
+              <p>Pour devenir chef d'entreprise, il n'y a pas <br> nécessairement de diplôme nécessaire, excepté, <br> éventuellement, un CAP, ou au minimum le BAC. <br>bien sûr, il est conseillé, dans tous les cas, <br>d'avoir suivi une formation en informatique.</p>
             </li>
-
           </ul>
         </div>
       </div>
       <br>
-
+      <a href="salaire.html"><button class="subcontent" type="button" name="button">Voir les Salaires</button></a>
+      <br><br>
       <footer>
         <p class=footer> All rights reserved | Copyright 2022 Xen,inc. &copy, <a class=mail href="mailto:zenowatelle@outlook.com">Nous contacter</a></p>
       </footer>
+      <script src="app.js"></script>
   </body>
-  <script>
-
-      $('.click li').mouseenter(function(){
-        $(this).children('deroul').css('diplay','block')
-      })
-      $('.click  li').mouseleave(function(){
-        $(this).children('deroul').css('diplay','none')
-      })
-  </script>
 </html>
