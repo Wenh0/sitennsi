@@ -1,224 +1,75 @@
-/*Attributs du body*/
-body {
-  margin: 0;
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
 }
 
-a {
-    text-decoration: none;
+body{
+    font-family: Arial;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column ;
 }
 
-/*Attributs de contenu*/
-.header {
-  margin-top: 48px;
-}
-
-.click button {
-  border: none;
-}
-
-.click h2 {
-  font-family: titlefont;
-}
-
-.head {
-  border-radius: 0px 0px 20px 20px;
+.head{
+    margin:0.5rem;
+    text-align: center;
+    font-weight: bold;
 }
 
 .content {
-  font-family: mainfont;
-  padding-left: 3%;
+    margin: 10px;
 }
 
-.title {
-  font-family: titlefont;
+.content .audioContent{
+    align-items: center;
+    margin: 5px;
+    border-radius: 20px;
+    background-color: beige;
+    padding: 20px;
 }
 
-.subcontent {
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
+.content .audioContent .box .info{
+    display: flex;
+    margin-right: 5px;
 }
 
-.click ul li {
-  display: inline-block;
-  margin-left: 1%;
-  margin-right: 1%;
+.content .audioContent .box{
+    align-items: center;
+    overflow: hidden;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    margin: 1rem;
 }
 
-.click a img {
-  border-radius: 20px;
-  transform: scale(1);
-  transition: .3s;
-}
-
-.click a img:hover {
-  border-radius: 10px;
-  transition: .3s;
-  transform: scale(1.05);
-  filter: brightness(80%);
-}
-
-.click li img {
-  border-radius: 15px;
-  transition: .3s;
-}
-
-.click li img:hover {
-  border-radius: 10px;
-  transform: scale(1.05);
-  transition: .3s;
-  filter: brightness(80%);
-}
-
-ul.subcontent li {
-  display: inline-block;
-  margin-left: 20px;
-  margin-right: 20px;
-}
-
-ul.subcontent li img {
-  border-radius: 15px;
-}
-
-/*Attributs du menu*/
-
-.menu nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-color: #004080;
-  z-index: 10;
-}
-
-.menu a {
-  margin-top: auto;
-  margin-bottom: auto;
-}
-
-nav {
-    display: block;
+.content .audioContent .box audio{
     width: 100%;
-    font-size: 130%;
+    outline: none; 
+    border-radius: 0.5rem;
 }
 
-ul {
-  list-style-type: none;
-  text-decoration: none;
-  list-style: none;
-  text-align: center;
-  padding: .7%;
-  margin: 0;
-}
-
-li {
-  display: inline;
-}
-
-a.menu {
-  cursor: alias;
-  font-family: menufont;
-  margin: 0;
-  margin-right: 3%;
-  margin-left: 3%;
-  border: none;
-  text-align: center;
-  padding: .5%;
-  color: white;
-  font-size: 60%;
-}
-
-a.menu:hover {
-  cursor: pointer;
-  background-color: #0059b3;
-  border-radius: 10px;
-  transition: .3s;
-}
-
-a.menu {
-  font-size-adjust: auto;
-  border: none;
-  background: none;
-}
-
-.menu img {
-  vertical-align: middle;
-}
-
-h2.subcontent {
-  text-align: center;
-}
-
-/*Attributs du footer*/
 footer{
-	background-color: #003366;
-	padding: 1%;
-	color: white;
-	text-align: bottom;
+    margin-top: auto;
+    background-color: #DC143C;
+    border-radius: 20px 20px 0rem 0rem;
+    padding: 1rem;
+    text-align: center;
+    color: white;
+    width: 100%;
 }
 
-p.footer {
-  font-family: mainfont;
-  padding-left: 2%
+.content .audioContent .box audio::-webkit-media-controls-panel {
+    background-color: #FFA07A;  
+  }
+
+@media(max-width:600px) {
+    body{
+        font-size: larger;
+    }
+    .content .audioContent{
+        flex-flow: column;
+    }
+    .content .carte {
+        width: 100%;
+    }
 }
-
-footer {
-  border-radius: 20px 20px 0px 0px;
-}
-
-/*Attributs des boutons et liens*/
-a.mail {
-  color: white;
-  text-decoration: none;
-  float: right;
-  padding-right: 2%;
-  font-family: menufont;
-}
-
-button.subcontent {
-  cursor: default;
-  padding: .7%;
-  border: none;
-  color: white;
-  background-color: #007FFF;
-  font-size: 120%;
-  border-radius: 15px;
-  display: flex;
-  justify-content: center;
-  transition: .3s;
-  transform: scale(1);
-}
-
-button.subcontent:hover {
-  cursor: pointer;
-  background-color: #6CB4EE;
-  border-radius: 10px;
-  transition: .3s;
-  background-position: right center;
-  box-shadow: 0 0 20px #eee;
-  transform: scale(1.05);
-}
-
-/*options déroulantes*/
-.deroul{
-  display: none;
-}
-
-
-
-/*Polices d'écritures*/
-@font-face {
-  font-family: "mainfont";
-  src:url("fonts/Quicksand-Regular.ttf");
-}
-
-@font-face {
-  font-family: "titlefont";
-  src:url("fonts/Quicksand-Bold.ttf");
-}
-
-@font-face {
-  font-family: "menufont";
-  src:url("fonts/Quicksand-SemiBold.ttf");
-}
-
-/*adaptivité*/
